@@ -3,7 +3,6 @@ package com.app.domesticflight.entity;
 
 
 import java.sql.Date;
-import java.sql.Time;
 import java.util.ArrayList;
 
 import javax.persistence.*;
@@ -41,12 +40,18 @@ public class FlightInfo {
    @JoinColumn(name="id",referencedColumnName = "id") 
   
    private com.app.domesticflight.entity.Time time;
-   
-  
-	   
-   
-   
-public com.app.domesticflight.entity.Time getTime() {
+
+	public FlightInfo(String city, String flightname, String airPortName, String multi, String single, String first, Time time) {
+		this.city = city;
+		this.flightname = flightname;
+		AirPortName = airPortName;
+		Multi = multi;
+		this.single = single;
+		this.first = first;
+		this.time = time;
+	}
+
+	public com.app.domesticflight.entity.Time getTime() {
 	return time;
 }
 

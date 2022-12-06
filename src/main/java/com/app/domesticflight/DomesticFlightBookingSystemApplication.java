@@ -15,7 +15,7 @@ import com.app.domesticflight.entity.Time;
 import com.app.domesticflight.service.FlightInfoDAOimpl;
 
 @SpringBootApplication
-public class DomesticFlightBookingSystemApplication implements CommandLineRunner{
+public class DomesticFlightBookingSystemApplication {
   
 	@Autowired
 	private FlightInfoDAOimpl flightInfoDAOimpl;
@@ -26,24 +26,7 @@ public class DomesticFlightBookingSystemApplication implements CommandLineRunner
 	
 	
  
-@Override
-public void run(String... args) throws Exception {
-	// TODO Auto-generated method stub
-	FlightInfo f=new FlightInfo();
-	f.setCity("abc");
-	f.setAirPortName("adsa");
-	f.setFlightname("xyx");
-	f.setFirst("1");
-	f.setMulti("14");
-	f.setSingle("133");
-	Time t=new Time();
-	t.setTime1("11:30");
-	t.setTime2("14:00");
-	t.setTime3("13:00");
-	f.setTime(t);
-	flightInfoDAOimpl.savetheflightinfo(f);
-}
- 
+
 	
 
 }
