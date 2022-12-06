@@ -37,7 +37,7 @@ public class FlightInfo {
    
    
    @OneToOne(cascade = CascadeType.ALL)
-   @JoinColumn(name="id",referencedColumnName = "id") 
+   @JoinColumn(name="time_id",referencedColumnName = "id")
   
    private com.app.domesticflight.entity.Time time;
 
