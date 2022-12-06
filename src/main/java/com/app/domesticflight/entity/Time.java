@@ -20,11 +20,7 @@ public class Time {
 	private String time3;
 
 
-	public Time(String time1, String time2, String time3) {
-		this.time1 = time1;
-		this.time2 = time2;
-		this.time3 = time3;
-	}
+
 
 	public Integer getId() {
 		return id;

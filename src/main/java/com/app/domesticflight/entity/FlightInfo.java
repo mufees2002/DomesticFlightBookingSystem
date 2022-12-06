@@ -41,15 +41,6 @@ public class FlightInfo {
   
    private com.app.domesticflight.entity.Time time;
 
-	public FlightInfo(String city, String flightname, String airPortName, String multi, String single, String first, Time time) {
-		this.city = city;
-		this.flightname = flightname;
-		AirPortName = airPortName;
-		Multi = multi;
-		this.single = single;
-		this.first = first;
-		this.time = time;
-	}
 
 	public com.app.domesticflight.entity.Time getTime() {
 	return time;
