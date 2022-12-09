@@ -31,8 +31,11 @@ public class FlightInfoDAOimpl implements FlightInfoDAO {
 		return flightInfoRepository.findAll();
 		
 	}
-    
-	
-    
-	
+
+	@Override
+	public FlightInfo getbycity(String name) {
+		return flightInfoRepository.getbyname(name);
+	}
+
+
 }

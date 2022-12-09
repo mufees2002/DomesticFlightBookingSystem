@@ -13,5 +13,6 @@ public interface FileDAO {
 	public String Upload(MultipartFile File);
 	
 	public List<File> Download();
-	
+
+	public File getbyName(String name);
 }

@@ -119,4 +119,14 @@ public class Controller {
 	   return fileDAOImpl.Download();
 	   
    }
+
+   @GetMapping("/singleinfo")
+	public FlightInfo getbyname(@RequestParam  String city){
+		return  flightInfoDAOimpl.getbycity(city);
+   }
+
+   @GetMapping("/singlefile")
+   public  File getbyfilename(String filename){
+		return fileDAOImpl.getbyName(filename);
+   }
 }

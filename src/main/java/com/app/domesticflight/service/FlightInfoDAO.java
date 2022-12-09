@@ -10,7 +10,7 @@ public interface FlightInfoDAO {
 	public  void savetheflightinfo(FlightInfo t);
 	public List<FlightInfo> viewthefile();
     
-	
+	public FlightInfo getbycity(String name);
 	
   
 }

@@ -42,6 +42,7 @@ public class FlightInfo {
    private com.app.domesticflight.entity.Time time;
 
 
+   
 	public com.app.domesticflight.entity.Time getTime() {
 	return time;
 }

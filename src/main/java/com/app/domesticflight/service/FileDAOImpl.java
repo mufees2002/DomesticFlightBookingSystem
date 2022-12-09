@@ -40,10 +40,13 @@ public class FileDAOImpl implements FileDAO {
 		// TODO Auto-generated method stub
 		return fileRepository.findAll();
 	}
-	
-	
-	
-  
+
+	@Override
+	public File getbyName(String name) {
+		return fileRepository.getbyname(name);
+	}
+
+
 }
 
 
