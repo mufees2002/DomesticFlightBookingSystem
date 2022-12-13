@@ -13,7 +13,7 @@ import java.util.List;
 @Repository
 public interface FileRepository extends JpaRepository<File, Long>{
 
-    @Query("select f from File f where filenaem=?1")
+    @Query("select f from File f where filename=?1")
     File getbyname(String filename);
 
 }
