@@ -1,0 +1,42 @@
+.dashb1{
+    height: 1700px;
+    width: 1400px;
+    background-color: white;    
+    margin-left: 200px;
+}
+
+.dashb1>h1{
+    color: blue;
+}
+
+
+
+.dashb1>.flightname{
+ width: 500px;
+ height: 2px;
+ margin-top: 50px;   
+ margin-left: 450px;
+margin-bottom: 40px;
+}
+.dashb1>.btn{
+    width: 500px;
+ height: 2px;
+ margin-top: 50px;   
+ margin-left: 450px;
+margin-bottom: 40px;
+height: 60px;
+align-items: center;
+}
+.exp{
+    font-size: 20px;
+    margin-top: -37px;
+    margin-right: 20px;
+    background-color: black; 
+    color: white;
+    padding: 2px;
+    border-radius: 3px;
+}
+
+.menu{
+    padding: 2px;
+}

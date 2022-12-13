@@ -1,0 +1,24 @@
+.fr1{
+    height: 1000px;
+    width: 1300px;
+    background-color: white;    
+    margin-left: 200px;
+}
+h1{
+    color: skyblue;
+}
+.fr1> .txt{
+    margin-left: 500px;
+    width: 400px;
+}
+#demo-row-radio-buttons-group-label{
+    margin-left: 505px;
+    padding-bottom: 2px;
+}
+
+
+.fr1>.btn1{
+    margin-left: 10px;
+    background-color: skyblue;
+    padding-top: 10px;
+}

@@ -1,0 +1,47 @@
+.cls1{
+    background-color: white;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 100px;
+    border-radius: 10px;
+    height: 1000px;
+    
+
+}
+.cls1>.btn{
+    width: 100px;
+    margin-top: 40px;
+    margin-left: 500px;
+    background-color: skyblue;
+ 
+}
+
+
+
+.cls1>.txt{
+    width: 100px;
+    margin-top: 40px;
+    margin-left: 500px;
+    
+}
+.cls1>.txt1{
+    width: 100px;
+    margin-top: 40px;
+    margin-left: 500px;
+      
+}
+.payment{
+    width: 400px;
+    height: 200px;
+    border-radius: 20px;
+
+    box-shadow: 20px;
+     
+    margin-left: 500px;
+font-size: 15px;
+font-style: normal;
+}
+#demo-row-radio-buttons-group-label{
+    margin-top: 40px;
+    margin-left: 500px;
+}
