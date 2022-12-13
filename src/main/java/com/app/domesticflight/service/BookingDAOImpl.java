@@ -13,40 +13,36 @@ public class BookingDAOImpl implements  BookingDAO{
    @Autowired
    private BookingRepository bookingRepository;
 
-   @Autowired
-   private FlightInfoRepository flightInfoRepository;
+  @Autowired
+  private  FlightInfoRepository flightInfoRepository;
 
 
     @Override
-    public int  FirstclassCount(String name) {
-        FlightInfo f=flightInfoRepository.getbyname(name);
-        int count= Integer.getInteger(f.getFirst());
-       return count;
-    }
-
-    @Override
-    public int DoubleClassCount(String name) {
-        FlightInfo f=flightInfoRepository.getbyname(name);
-        int count= Integer.getInteger(f.getMulti());
-        return count;
-    }
-
-    @Override
-    public int SingleSeat(String name) {
-        FlightInfo f=flightInfoRepository.getbyname(name);
-        int count= Integer.getInteger(f.getSingle());
-        return count;
-    }
-
-
-    @Override
-    public void Book(Booking b) {
+    public String  Book(Booking b) {
         Booking book=bookingRepository.getbyDat(b.getDate() );
         FlightInfo flightInfo=flightInfoRepository.getbyname(b.getPlace());
+         int f=Integer.getInteger(b.getFirst());
+         int d=Integer.getInteger(b.getMulti());
+         int s=Integer.getInteger(b.getSingle());
+
+         int f1=Integer.getInteger(flightInfo.getFirst());
+         int d1=Integer.getInteger(flightInfo.getMulti());
+         int s1=Integer.getInteger(flightInfo.getSingle());
+
+        int f2=Integer.getInteger(book.getFirst());
+        int d2=Integer.getInteger(book.getMulti());
+        int s2=Integer.getInteger(book.getSingle());
 
 
+        if(f<f1&&d<d1&&s<s1){
+            b.setFirst(String.valueOf(f+f2));
+            b.setMulti(String.valueOf(d+d1));
+            b.setSingle(String.valueOf(s+s1));
 
+        }
 
+       bookingRepository.save(b);
 
+        return" Sucess";
     }
 }
