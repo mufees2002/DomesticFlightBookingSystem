@@ -1,6 +1,6 @@
 # DomesticFlightBookingSystem
 
-Java
+ Java
  Spring Boot
  MySql
  Hibernate
